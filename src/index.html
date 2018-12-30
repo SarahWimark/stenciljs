@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <link rel="stylesheet" href="src\main.css">
+  <title>Stencil Component Starter</title>
+  <script src="/build/mycomponent.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .side-nav ul {
+      list-style: none;
+    }
+
+    .side-nav a {
+      text-decoration: none;
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <button>Open side drawer</button>
+  <sw-side-drawer title="Main Menu">
+    <nav class="side-nav">
+      <ul>
+        <li><a href="/">Link 1</a></li>
+        <li><a href="/">Link 2</a></li>
+        <li><a href="/">Link 3</a></li>
+      </ul>
+    </nav>
+  </sw-side-drawer>
+
+</body>
+
+</html>

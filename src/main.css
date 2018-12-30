@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+}
+
+.side-nav ul {
+list-style: none;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: brown;
+    }
