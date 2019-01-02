@@ -20,11 +20,18 @@
       text-decoration: none;
       color: brown;
     }
+
+    #side-drawer-btn {
+      background: black;
+      color: white;
+      position: absolute;
+    }
+
   </style>
 </head>
 
 <body>
-  <button>Open side drawer</button>
+  <button id="side-drawer-btn">Open side menu</button>
   <sw-side-drawer title="Main Menu">
     <nav class="side-nav">
       <ul>
@@ -35,6 +42,17 @@
     </nav>
   </sw-side-drawer>
 
+  <script>
+    const sideDrawerButton = document.querySelector('#side-drawer-btn')
+    const sideDrawer = document.querySelector('sw-side-drawer')
+
+    sideDrawerButton.addEventListener('click', () => {
+      if (!sideDrawer.open) {
+        sideDrawer.open = true
+      }
+    })
+
+  </script>
 </body>
 
 </html>
